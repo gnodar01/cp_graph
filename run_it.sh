@@ -1,0 +1,1 @@
+uv run --script cp_graph.py --remove-unused-data --highlight-filtered --filter-objects examples/beg_segmentation.json examples/output/beg_segmentation.dot && pixi exec --spec "graphviz" dot -Tpng examples/output/beg_segmentation.dot -o examples/output/beg_segmentation.png && kitten icat examples/output/beg_segmentation.png
